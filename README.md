@@ -4,8 +4,6 @@ This notebook contains a sentiment analysis model to classify movie reviews as *
 
 It contains 50000 reviews, which is divided into train and test sets of 25000 reviews each.
 
-![sentiment-face.png](attachment:sentiment-face.png)
-
 Following steps are performed:
 
 1. Load the dataset using Tensorflow datasets, and split into Train and Test sets.
