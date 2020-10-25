@@ -1,15 +1,26 @@
 # Text Sentiment Analysis on IMDB dataset
 
-This notebook contains a sentiment analysis model to classify movie reviews as **positive** or **negative**. We will use the IMDB movie review dataset (https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz) for developing the model. 
+In this notebook, we will be working with the IMDB Moview Review dataset, which contains a text review alongwith its corresponding label - positive (1) or negative (0). The dataset has contains 50000 reviews, which is divided into train and test sets of 25000 reviews each. 
+Original dataset can be found at following link:
+https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 
-It contains 50000 reviews, which is divided into train and test sets of 25000 reviews each.
+![sentiment-face.png](attachment:sentiment-face.png)
 
-Following steps are performed:
+We will perform following activities:
+* Build a classifier to perform Sentiment Analysis on the given data 
+* Explore the performance of various Neural Network based models (DNN, LSTM, GRU, Ensemble model)
+* Visualize the relationship between Words based on their Embeddings using Tensorboard
 
-1. Load the dataset using Tensorflow datasets, and split into Train and Test sets.
-2. Tokenize sentences into numeric sequence vectors of fixed length, with padding if required.
-3. Define our Neural Network model consisting of Embedding, Pooling and Dense layers, with Sigmoid activation in the output layer, and `Binary CrossEntropy` as loss function.
-4. Train the model.
-5. Get Model Accuracy.
-6. Visualize Training and Validation Accuracy and Loss.
-7. Run model on new custom data to get predictions.
+Tensorboard Projections:
+
+![word_clusters.jpg](attachment:word_clusters.jpg)
+
+We can see dense clusters at the opposite ends of the sphere, indicating **positive** and **negative** word clusters
+
+![enthralling.jpg](attachment:enthralling.jpg)
+
+#### Positive word like "Enthralling" is nearby other positive words such as Excellently, Astounding, Engrossing
+
+![disappointing.jpg](attachment:disappointing.jpg)
+
+#### Negative word like "Disappointing" is near other negative words such as Awful, Cartoonish, Obscene etc.
