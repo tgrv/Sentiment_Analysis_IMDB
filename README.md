@@ -4,8 +4,6 @@ In this notebook, we will be working with the IMDB Moview Review dataset, which 
 Original dataset can be found at following link:
 https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 
-![sentiment-face.png](attachment:sentiment-face.png)
-
 We will perform following activities:
 * Build a classifier to perform Sentiment Analysis on the given data 
 * Explore the performance of various Neural Network based models (DNN, LSTM, GRU, Ensemble model)
@@ -13,14 +11,14 @@ We will perform following activities:
 
 Tensorboard Projections:
 
-![word_clusters.jpg](attachment:word_clusters.jpg)
+![word_clusters.jpg](https://github.com/tgrv/Sentiment_Analysis_IMDB/blob/master/word_clusters.jpg)
 
 We can see dense clusters at the opposite ends of the sphere, indicating **positive** and **negative** word clusters
 
-![enthralling.jpg](attachment:enthralling.jpg)
+![enthralling.jpg](https://github.com/tgrv/Sentiment_Analysis_IMDB/blob/master/enthralling.jpg)
 
 #### Positive word like "Enthralling" is nearby other positive words such as Excellently, Astounding, Engrossing
 
-![disappointing.jpg](attachment:disappointing.jpg)
+![disappointing.jpg](https://github.com/tgrv/Sentiment_Analysis_IMDB/blob/master/disappointing.jpg)
 
 #### Negative word like "Disappointing" is near other negative words such as Awful, Cartoonish, Obscene etc.
